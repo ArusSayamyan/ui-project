@@ -1,0 +1,115 @@
+@import "../utils/_vars.scss";
+
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.mainContent {
+  width: 100%;
+  margin: 0 auto;
+  background-color: $color-athens-gray;
+  box-sizing: border-box;
+  padding: 0 0 0 96px;
+}
+
+.apexcharts-toolbar {
+  display: none !important;
+}
+
+.apexcharts-legend-series:first-child {
+  margin-bottom: 34px !important;
+}
+
+.apexcharts-legend.apx-legend-position-left {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.apexcharts-legend.apx-legend-position-bottom.apexcharts-align-left {
+  display: flex !important;
+  justify-content: space-between !important;
+  max-width: 360px !important;
+}
+.p-accordion .p-accordion-header .p-accordion-header-link {
+  padding: 0 !important;
+  border: none !important;
+  background: #fff !important;
+  outline:none !important;
+}
+
+.p-accordion .p-accordion-content {
+  padding: 0 !important;
+  border: none !important;
+}
+
+.p-inputswitch.p-inputswitch-checked .p-inputswitch-slider {
+  background: #6D32A5 !important;
+}
+
+.p-inputswitch .p-inputswitch-slider:before {
+  width: 16px !important;
+  height: 16px!important;
+  left: -5px!important;
+  margin-top: -8px!important;
+}
+
+.p-inputswitch {
+  width: 33px !important;
+  height: 18px !important;
+}
+
+.p-accordion .p-accordion-header:not(.p-disabled) .p-accordion-header-link:focus {
+  box-shadow: none !important;
+}
+.apexcharts-legend.apx-legend-position-top.apexcharts-align-left {
+  left: 315px !important;
+}
+
+.apexcharts-legend.apexcharts-align-left .apexcharts-legend-series  {
+  margin-top: 0 !important;
+  margin-right: 50px !important;
+}
+.apexcharts-legend.apx-legend-position-top.apexcharts-align-right {
+  top: -46px !important;
+}
+
+.apexcharts-legend-text {
+  font-weight: 700 !important;
+  font-size: 13px !important;
+}
+.p-accordion-header-action {
+  flex-direction: row-reverse;
+}
+.p-accordion .p-accordion-header .p-accordion-header-link .p-accordion-toggle-icon {
+  margin-right: 0;
+  margin-left: 1rem;
+  margin-bottom: 33px;
+  transform: rotate(90deg);
+}
+
+.p-accordion .p-accordion-tab {
+  padding: 25px 75px 0 !important;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0 !important;
+  border-radius: 33px !important;
+  margin-bottom: 15px !important;
+
+  &:first-child {
+    border-left: 15px solid red;
+  }
+
+  &:nth-child(2) {
+    border-left: 15px solid #6D32A5;
+  }
+
+  &:nth-child(3) {
+    border-left: 15px solid #43BCCD;
+  }
+}

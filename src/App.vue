@@ -1,26 +1,50 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <TheSideBar/>
+    <div class="mainContent">
+      <TheNav/>
+      <TheHeader/>
+      <NewTask/>
+      <ColumnCarts/>
+      <LineChart/>
+      <RateCharts/>
+      <RecentTransitions/>
+      <TaskStatistics/>
+      <TasksApproval/>
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TheNav from './layout/TheNav.vue'
+import TheHeader from './layout/TheHeader.vue'
+import NewTask from "@/components/NewTask";
+import ColumnCarts from "@/components/ColumnCarts";
+import LineChart from "@/components/LineChart";
+import RateCharts from "@/components/RateCharts";
+import RecentTransitions from "@/components/RecentTransitions";
+import TaskStatistics from "@/components/TaskStatistics";
+import TasksApproval from "@/components/TasksApproval";
+import TheSideBar from "@/layout/TheSideBar";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TheNav,
+    TheHeader,
+    NewTask,
+    ColumnCarts,
+    LineChart,
+    RateCharts,
+    RecentTransitions,
+    TaskStatistics,
+    TasksApproval,
+    TheSideBar,
+  },
+  setup() {
+    return {}
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style lang="scss" src="./utils/_global.scss"></style>
