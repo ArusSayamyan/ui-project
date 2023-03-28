@@ -31,43 +31,4 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
-.newTaskBlock {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  &__descBlock {
-    max-width: 970px;
-    width: 100%;
-  }
-
-  &__content {
-    display: flex;
-    align-items: flex-start;
-    width: 100%;
-  }
-
-  &__title {
-    margin: 0;
-    font-size: 26px;
-  }
-
-  &__image {
-    margin-right: 8px;
-  }
-
-  &__btns {
-    display: flex;
-    column-gap: 15px;
-    width: 100%;
-    justify-content: flex-end;
-  }
-
-  &__desc {
-     color: #A3A6B9;
-    font-size: 13px;
-    margin: 5px 0 0;
-  }
-}
-</style>
+<style scoped lang="scss" src="../styles/_newTask.scss"></style>

@@ -20,24 +20,4 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-@import "../utils/_vars.scss";
-
-.sectionInfo {
-  &__sectionName {
-    color: $color-santas-gray;
-    text-transform: uppercase;
-    font-size: 15px;
-    margin-bottom: 5px;
-    font-weight: 600;
-  }
-
-  &__count {
-    font-size: 30px;
-    margin: 0;
-    font-weight: 600;
-  }
-}
-
-</style>
+<style scoped lang="scss" src="../styles/_infoSection.scss"></style>

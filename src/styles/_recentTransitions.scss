@@ -1,0 +1,53 @@
+.accordion {
+  max-width: 1652px;
+  width: 100%;
+  margin: 0 auto 30px;
+  border-radius: 30px;
+  box-shadow: 0 3px 26px #00000008;
+  background-color: #ffff;
+  box-sizing: border-box;
+  padding: 30px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 23px;
+  }
+
+  &__switcher {
+    display: flex;
+    max-width: 165px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__title {
+    color: #A3A6B9;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+
+  &__switcherName {
+    color: #05081D;
+    font-weight: 600;
+  }
+
+  &__subHeader, &__contentBox {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 25px;
+  }
+
+  &__block, &__messages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__headerTitle {
+    color: #05081D;
+    font-weight: 600;
+    font-size: 26px;
+  }
+}

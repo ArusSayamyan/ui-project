@@ -23,8 +23,6 @@ import {reactive} from "vue";
 import ChartWrap from "@/components/ChartWrap";
 import arrowDown from '@/assets/svgs/arrowDown.svg'
 
-
-
 export default {
   name: "ColumnCarts",
   components: {ChartWrap},
@@ -63,7 +61,6 @@ export default {
           'PRODUCTION PARALLEL',
           'LIVE EXECUTION',
           'COMPLETED',
-
         ],
         labels: {
           style: {
@@ -72,10 +69,7 @@ export default {
           }
         }
       },
-
     })
-
-
       return {
         series,
         chartOptions,
@@ -83,66 +77,7 @@ export default {
         arrowDown
       }
     },
-
 }
 </script>
 
-<style scoped lang="scss">
-.chartsContainer {
-  max-width: 1652px;
-  width: 100%;
-  margin: 0 auto 30px;
-  display: flex;
-  justify-content: space-between;
-
-  &__lineCharts {
-    border-radius: 30px;
-    box-shadow: 0 3px 26px #00000008;
-    background-color: #ffff;
-    box-sizing: border-box;
-    padding: 30px;
-  }
-
-  &__lineCharts {
-    max-width: 1047px;
-    width: 100%;
-  }
-
-  &__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 328px;
-    width: 100%;
-    margin-bottom: 25px;
-  }
-
-  &__chartWrapHeader {
-    max-width: 140px;
-  }
-
-  &__title {
-    font-size: 15px;
-    color: #A3A6B9;
-    text-transform: uppercase;
-    margin: 0;
-  }
-
-  &__select {
-    padding: 0 10px;
-
-    &--withBorder {
-      border-right: 1px solid black;
-    }
-  }
-
-  &__selectName {
-    margin-right: 10px;
-    font-size: 13px;
-  }
-
-}
-
-
-
-</style>
+<style scoped lang="scss" src="../styles/_columnCarts.scss"></style>

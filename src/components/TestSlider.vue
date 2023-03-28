@@ -4,11 +4,10 @@
         class="swiper"
         :modules="modules"
         :slides-per-view="1"
-        :space-between="30"
+        :space-between="20"
         :keyboard="{ enabled: true }"
         :pagination="{ clickable: true }"
         :navigation="true"
-        @swiper="onSwiper"
         @slideChange="onSlideChange"
         swiper.animating=true
     >
@@ -25,9 +24,7 @@
           <span class="sliderBlock__number">{{ pageNum }}/2</span>
           <img src="@/assets/svgs/arrowNext.svg" alt="" class="sliderBlock__arrowNext" @click="onSwiper">
         </div>
-
       </div>
-
       <swiper-slide class="slide">
 
         <div class="sliderBlock__slider">
@@ -128,8 +125,6 @@
         </div>
       </swiper-slide>
     </swiper-vue>
-
-
   </div>
 </template>
 
@@ -147,9 +142,6 @@ export default defineComponent({
   url: import.meta.url,
   setup() {
     const pageNum = ref(1)
-    const onSwiper = (swiper) => {
-      console.log(swiper);
-    };
     const onSlideChange = () => {
       if(pageNum.value === 1) {
         pageNum.value++
@@ -161,7 +153,6 @@ export default defineComponent({
     };
     return {
       modules: [Pagination, Navigation, Keyboard],
-      onSwiper,
       onSlideChange,
       pageNum
     }
@@ -169,198 +160,4 @@ export default defineComponent({
 })
 </script>
 
-<style lang="scss">
-
-.sliderBlock {
-  max-width: 1047px;
-  width: 100%;
-  border-radius: 30px;
-  box-shadow: 0 3px 26px #00000008;
-  background-color: #ffff;
-  position: relative;
-  padding: 30px;
-  margin-right: 30px;
-
-  //&__arrows {
-  //  max-width: 87px;
-  //  width: 100%;
-  //  position: absolute;
-  //  top: 26px;
-  //  right: 20px;
-  //  display: flex;
-  //  justify-content: center;
-  //}
-  //
-  //&__arrowNext {
-  //  visibility: hidden;
-  //}
-  //
-  //&__arrowPrev {
-  //  visibility: hidden;
-  //}
-
-  &__slider {
-    border-radius: 30px;
-    box-sizing: border-box;
-    padding: 30px;
-    background-color: #ffff;
-    box-shadow: rgba(0, 0, 0, 0.16) 0 10px 36px 0, rgba(0, 0, 0, 0.06) 0 0 0 1px;
-    margin-top: 45px;
-  }
-
-  &__selectWrapper {
-    display: flex;
-  }
-
-  &__nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 25px;
-    position: absolute;
-    top: 0;
-    padding: 15px;
-  }
-
-  &__title {
-    font-size: 15px;
-    color: #A3A6B9;
-    text-transform: uppercase;
-    margin: 0;
-  }
-
-  &__select {
-    padding: 0 10px;
-
-    &--withBorder {
-      border-right: 1px solid black;
-    }
-  }
-
-  &__selectName {
-    margin-right: 10px;
-    font-size: 13px;
-  }
-
-  &__header {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  &__icons {
-    display: flex;
-    column-gap: 10px;
-  }
-
-  &__main {
-    display: flex;
-  }
-
-  &__date {
-    color: #43BCCD;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin: 0;
-  }
-
-  &__section {
-    color: #05081D;
-    font-weight: 600;
-    margin: 0;
-  }
-
-  &__mainTitle {
-    color: #05081D;
-    font-size: 26px;
-    font-weight: 600;
-  }
-
-  &__subTitle {
-    color: #43BCCD;
-    text-transform: uppercase;
-    font-size: 12px;
-    margin: 0;
-  }
-
-  &__text {
-    color: #A3A6B9;
-    font-size: 13px;
-    line-height: 24px;
-    margin-right: 44px;
-  }
-
-  &__footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  &__filters {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 600px;
-    width: 100%;
-  }
-
-  &__filteredItem {
-    display: flex;
-    align-items: center;
-  }
-
-  &__filteredIcon {
-    margin-right: 10px;
-  }
-
-  &__filteredName {
-    color: #05081D;
-    font-size: 13px;
-    font-weight: 700;
-  }
-
-  &__number {
-    margin: 0 10px;
-  }
-}
-
-.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: 0 !important;
-}
-
-.swiper-pagination-bullet-active {
-  background: #000 !important;
-}
-
-.swiper-horizontal {
-  border-radius: 15px;
-  height: 340px;
-}
-.swiper-button-next {
-  right: 14px;
-  left: auto;
-  position: absolute;
-  top: 40px;
-  width: 10px;
-  height: 10px;
-  color: #000;
-}
-.swiper-button-prev {
-  right: 64px;
-  left: auto;
-  position: absolute;
-  top: 40px;
-  width: 10px;
-  height: 10px;
-  color: #000;
-}
-
-.swiper-button-next::after {
-  font-size: 14px;
-}
-.swiper-button-prev::after {
-  font-size: 14px;
-}
-
-</style>
+<style lang="scss" src="../styles/_taskSlider.scss"></style>

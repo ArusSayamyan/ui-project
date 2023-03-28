@@ -1,0 +1,63 @@
+.lineChart {
+  max-width: 1652px;
+  width: 100%;
+  margin: 0 auto 30px;
+  border-radius: 30px;
+  box-shadow: 0 3px 26px #00000008;
+  background-color: #ffff;
+  box-sizing: border-box;
+  padding: 30px;
+  position: relative;
+
+  &__days {
+    display: flex;
+    position: absolute;
+    top: 17px;
+    right: 30px;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 920px;
+  }
+
+  &__option {
+    color: #A3A6B9;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  &__taskDays {
+    font-size: 13px;
+    color:  #05081D;
+    font-weight: 600;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 267px;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  &__title {
+    font-size: 15px;
+    color: #A3A6B9;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  &__select {
+    padding: 0 10px;
+
+    &--withBorder {
+      border-right: 1px solid black;
+    }
+  }
+
+  &__selectName {
+    margin-right: 10px;
+    font-size: 13px;
+  }
+
+}

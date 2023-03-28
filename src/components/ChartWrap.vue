@@ -15,7 +15,6 @@
       </div>
     </div>
   </div>
-
 </template>
 
 <script>
@@ -82,46 +81,4 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
-.chartWrap {
-  border-radius: 30px;
-  box-shadow: 0 3px 26px #00000008;
-  background-color: #ffff;
-  box-sizing: border-box;
-  padding: 30px;
-  max-width: 579px;
-  width: 100%;
-
-  &__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: fit-content;
-    margin-bottom: 25px;
-  }
-
-  &__title {
-    font-size: 15px;
-    color: #A3A6B9;
-    text-transform: uppercase;
-    margin: 0;
-  }
-
-  &__select {
-    padding: 0 10px;
-
-    &--withBorder {
-      border-right: 1px solid black;
-    }
-  }
-
-  &__selectName {
-    margin-right: 10px;
-    font-size: 13px;
-  }
-}
-
-.chart-wrap {
-  margin-top: 70px;
-}
-</style>
+<style src="../styles/_chartWrap.scss" lang="scss" scoped></style>

@@ -1,0 +1,40 @@
+.coloredColumnCharts {
+  position: relative;
+  max-width: 1198px;
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  box-shadow: 0 3px 26px #00000008;
+  background-color: #ffff;
+  margin-left: 30px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    margin-bottom: 25px;
+  }
+
+  &__title {
+    font-size: 15px;
+    color: #A3A6B9;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  &__select {
+    padding: 0 10px;
+
+    &--withBorder {
+      border-right: 1px solid black;
+    }
+  }
+
+  &__selectName {
+    margin-right: 10px;
+    font-size: 13px;
+  }
+
+}
